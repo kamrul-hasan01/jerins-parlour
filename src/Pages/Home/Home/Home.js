@@ -1,12 +1,15 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import Banner from '../Banner/Banner';
+import ContactUs from '../ContactUs/ContactUs';
+import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
 import Professional from '../Professional/Professional';
 
 const Home = () => {
     const headerBG = {
-        backgroundColor: "#E5E5E5"
+        backgroundColor: "#FFF8F5"
+
     }
     return (
         <div>
@@ -15,11 +18,14 @@ const Home = () => {
                 <title>Home</title>
 
             </Helmet>
-            <div className={headerBG}>
+            <div style={headerBG}>
                 <Header></Header>
                 <Banner></Banner>
                 <Professional></Professional>
+                <ContactUs></ContactUs>
+
             </div>
+            <Footer></Footer>
 
 
         </div>
