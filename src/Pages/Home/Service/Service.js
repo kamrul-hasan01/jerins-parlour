@@ -5,7 +5,7 @@ import './Service.css'
 const Service = () => {
     const [services, setServices] = useState({});
     useEffect(() => {
-        axios.get('http://localhost:5000/services')
+        axios.get('https://pure-fjord-61142.herokuapp.com/services')
             .then(res => setServices(res.data))
     }, [])
     return (

@@ -1,0 +1,6 @@
+.from-bg{
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(117, 19, 93, 0)),url('../../img/login.jpg'); 
+}
+.login-form-shadow{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

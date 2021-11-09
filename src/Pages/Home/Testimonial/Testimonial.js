@@ -6,7 +6,7 @@ import Rating from 'react-rating';
 const Testimonial = () => {
     const [reviews, setReviews] = useState({});
     useEffect(() => {
-        axios.get('http://localhost:5000/reviews')
+        axios.get('https://pure-fjord-61142.herokuapp.com/reviews')
             .then(res => setReviews(res.data))
     }, [])
     return (
@@ -17,8 +17,8 @@ const Testimonial = () => {
                 {reviews.length ? reviews?.map(review => <Col
                     key={review._id}
                 >
-                    <Card>
-                        <div className="d-flex justify-content-center"> <Card.Img variant="top" src={review.img} style={{ height: "150px", width: "150px" }} /></div>
+                    <Card className="m-4 border-0">
+                        <div className="d-flex justify-content-center"> <Card.Img variant="top" src={review.img} style={{ height: "150px", width: "150px", marginTop: "10px" }} /></div>
                         <Card.Body>
                             <Card.Title className="text-center mb-0">{review.name}</Card.Title>
                             <p className="text-center mt-0 mb-1">{review.company}</p>

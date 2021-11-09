@@ -18,7 +18,7 @@ const Review = () => {
     const handeReviewSubmit = e => {
         e.preventDefault()
         console.log(review)
-        axios.post('http://localhost:5000/reviews', review)
+        axios.post('https://pure-fjord-61142.herokuapp.com/reviews', review)
             .then(res => {
                 if (res.data.insertedId) {
                     alert("Review inserted Success")

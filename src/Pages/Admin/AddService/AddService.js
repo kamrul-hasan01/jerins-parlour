@@ -15,7 +15,7 @@ const AddService = () => {
     const handleServiceSubmit = e => {
         e.preventDefault();
         console.log(newService)
-        axios.post('http://localhost:5000/services', newService)
+        axios.post('https://pure-fjord-61142.herokuapp.com/services', newService)
             .then(res => {
                 if (res.data.insertedId) {
                     alert("New Service add successfully")
