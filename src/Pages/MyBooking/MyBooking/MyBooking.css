@@ -1,0 +1,10 @@
+.custom-my-booking-link a{
+    text-decoration: none;
+    display: block;
+    color: black;
+    font-size: 20px;
+    padding: 2px 0;
+}
+/* .panel-bg{
+    background-color: ;
+} */

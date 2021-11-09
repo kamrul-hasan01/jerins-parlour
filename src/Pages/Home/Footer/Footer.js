@@ -9,7 +9,7 @@ const Footer = () => {
                     <Col md={4}>
                         <Row>
                             <Col md={1}>
-                                <p className="fs-3"> <i class="fas fa-map-marker-alt"></i></p>
+                                <p className="fs-3"> <i className="fas fa-map-marker-alt"></i></p>
                             </Col>
                             <Col md={11}>
                                 <p className="fs-5"> H#000 , Road #00,New DOHS, Mohakhali, Dhaka, Bangladesh</p>
@@ -36,10 +36,10 @@ const Footer = () => {
                         <h5>About Us</h5>
                         <p className="my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique id consectetur necessitatibus, a molestiae non </p>
                         <p>
-                            <span><i class="fab fa-facebook-square fs-2 me-2"></i></span>
-                            <span><i class="fab fa-instagram-square fs-2 me-2"></i></span>
-                            <span><i class="fab fa-linkedin fs-2 me-2"></i></span>
-                            <span><i class="fab fa-twitter-square fs-2 me-2"></i></span>
+                            <span><i className="fab fa-facebook-square fs-2 me-2"></i></span>
+                            <span><i className="fab fa-instagram-square fs-2 me-2"></i></span>
+                            <span><i className="fab fa-linkedin fs-2 me-2"></i></span>
+                            <span><i className="fab fa-twitter-square fs-2 me-2"></i></span>
                         </p>
 
                     </Col>

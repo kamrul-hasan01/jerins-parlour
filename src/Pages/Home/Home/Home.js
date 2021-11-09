@@ -5,6 +5,8 @@ import ContactUs from '../ContactUs/ContactUs';
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
 import Professional from '../Professional/Professional';
+import Service from '../Service/Service';
+import Testimonial from '../Testimonial/Testimonial';
 
 const Home = () => {
     const headerBG = {
@@ -21,7 +23,9 @@ const Home = () => {
             <div style={headerBG}>
                 <Header></Header>
                 <Banner></Banner>
+                <Service></Service>
                 <Professional></Professional>
+                <Testimonial></Testimonial>
                 <ContactUs></ContactUs>
 
             </div>
