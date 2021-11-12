@@ -28,8 +28,9 @@ const Header = () => {
                     <Nav className="ms-auto">
 
                         <NavLink to="/home" activeStyle={activeStyle}>Home</NavLink>
-                        <NavLink to="/myBooking" activeStyle={activeStyle}>My Bookings</NavLink>
-                        <NavLink to="/admin" activeStyle={activeStyle}>Admin</NavLink>
+
+                        <NavLink to="/dashboard" activeStyle={activeStyle}>Dashboard</NavLink>
+
 
                         <NavLink to="/login" activeStyle={activeStyle}>Login</NavLink>
                     </Nav>

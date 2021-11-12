@@ -3,8 +3,9 @@ import './App.css';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from './Pages/Home/Home/Home';
 import Login from './Pages/Login/Login';
-import MyBooking from './Pages/MyBooking/MyBooking/MyBooking';
-import AdminHome from './Pages/Admin/AdminHome/AdminHome';
+
+
+import DashBoard from './Pages/DashBoard/DashBoard/DashBoard';
 
 function App() {
   return (
@@ -18,12 +19,11 @@ function App() {
           <Route path="/home">
             <Home />
           </Route>
-          <Route path="/myBooking">
-            <MyBooking></MyBooking>
+
+          <Route path="/dashboard">
+            <DashBoard></DashBoard>
           </Route>
-          <Route path="/admin">
-            <AdminHome></AdminHome>
-          </Route>
+
 
           <Route path="/login">
             <Login />

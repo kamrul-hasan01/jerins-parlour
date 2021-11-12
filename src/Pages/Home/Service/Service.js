@@ -1,37 +1,49 @@
-import axios from 'axios';
-import React, { useEffect, useState } from 'react';
-import { Card, Col, Container, Row, Spinner } from 'react-bootstrap';
+import React from 'react';
+import { Card, Col, Container, Row } from 'react-bootstrap';
 import './Service.css'
 const Service = () => {
-    const [services, setServices] = useState({});
-    useEffect(() => {
-        axios.get('https://pure-fjord-61142.herokuapp.com/services')
-            .then(res => setServices(res.data))
-    }, [])
+
     return (
         <div>
             <Container className="py-5">
                 <h4 className="text-center fs-2">Our Awesome  <span style={{ color: "#F63E7B" }}> Service</span> </h4>
                 <Row xs={1} md={3} className="g-5 mt-4">
-
-                    {services.length ? services?.map(service => <Col
-                        key={service._id}
-                    >
+                    <Col>
                         <Card className="border-0 custom-service-shadow m-4 rounded">
-                            <div className="d-flex justify-content-center"> <Card.Img variant="top" src={service.img} style={{ height: "72px", width: "72px", marginTop: "15px" }} /></div>
+                            <div className="d-flex justify-content-center"> <Card.Img variant="top" src="https://i.ibb.co/q94Z0sY/Group-1373.png" style={{ height: "72px", width: "72px", marginTop: "15px" }} /></div>
                             <Card.Body>
-                                <Card.Title className="text-center mb-0">{service.serviceName}</Card.Title>
-                                <p className="text-center mt-0 mb-1 fs-5 fw-bold" style={{ color: "#F63E7B" }}>$ {service.price}</p>
+                                <Card.Title className="text-center mb-0">Anti Age Face Treatment</Card.Title>
+                                <p className="text-center mt-0 mb-1 fs-5 fw-bold" style={{ color: "#F63E7B" }}>$ 199</p>
                                 <Card.Text className="mb-0 text-center">
-                                    {service.details
-                                    }
+                                    We craft stunning and amazing web UI, using a well drrafted UX to fit your product.
                                 </Card.Text>
                             </Card.Body>
                         </Card>
-                    </Col>)
-                        : <p className="d-flex justify-content-center align-items-center">   <Spinner animation="border" variant="info" /></p>
-                    }
-
+                    </Col>
+                    <Col>
+                        <Card className="border-0 custom-service-shadow m-4 rounded">
+                            <div className="d-flex justify-content-center"> <Card.Img variant="top" src="https://i.ibb.co/1vZDBv4/Group-1372.png" style={{ height: "72px", width: "72px", marginTop: "15px" }} /></div>
+                            <Card.Body>
+                                <Card.Title className="text-center mb-0">Hair Color & Styeing</Card.Title>
+                                <p className="text-center mt-0 mb-1 fs-5 fw-bold" style={{ color: "#F63E7B" }}>$ 99</p>
+                                <Card.Text className="mb-0 text-center">
+                                    Amazing flyers, social media posts and brand representations that would make your brand stand out.
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                    <Col>
+                        <Card className="border-0 custom-service-shadow m-4 rounded">
+                            <div className="d-flex justify-content-center"> <Card.Img variant="top" src="https://i.ibb.co/HgVXnDC/Group-1374.png" style={{ height: "72px", width: "72px", marginTop: "15px" }} /></div>
+                            <Card.Body>
+                                <Card.Title className="text-center mb-0">Screen Care Treatment</Card.Title>
+                                <p className="text-center mt-0 mb-1 fs-5 fw-bold" style={{ color: "#F63E7B" }}>$ 199</p>
+                                <Card.Text className="mb-0 text-center">
+                                    With well written codes, we build amazing apps for all platforms, mobile and web apps in general.
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </Col>
                 </Row>
 
 
